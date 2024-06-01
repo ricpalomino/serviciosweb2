@@ -21,15 +21,18 @@ import lombok.Setter;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-@Table(name = "instructor")
+@Table(name = "tb_instructor")
 public class Instructor implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer instructorId;
     private String name;
+    @Column(name = "last_name")
     private String lastname;
     private String password;
+
+    @Column(unique=true,nullable=false)
     private String email;
 
     @Column(name = "create_at")

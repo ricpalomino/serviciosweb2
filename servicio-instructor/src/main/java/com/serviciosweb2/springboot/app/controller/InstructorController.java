@@ -44,7 +44,7 @@ public class InstructorController {
 
     @PostMapping("/instructor")
     public ResponseEntity<?> save(@RequestBody Instructor instructor) {
-        instructorService.insert(instructor);
+        instructorService.save(instructor);
         return new ResponseEntity<Void>(HttpStatus.CREATED);
     }
     
@@ -57,7 +57,7 @@ public class InstructorController {
             instructorFound.setPassword(instructor.getPassword());
             instructorFound.setLastname(instructor.getLastname());
             instructorFound.setCreateAt(instructor.getCreateAt());
-            instructorService.upddate(instructorFound);
+            instructorService.save(instructorFound);
             return new ResponseEntity<Void>(HttpStatus.OK);
         }
         return new ResponseEntity<Void>(HttpStatus.NOT_FOUND);

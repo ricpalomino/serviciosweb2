@@ -17,12 +17,7 @@ public class InstructorServiceImpl implements InstructorService {
 
     @Override
     @Transactional(readOnly = false)
-    public void insert(Instructor instructor) {
-        instructorRepository.save(instructor);
-    }
-
-    @Override
-    public void upddate(Instructor instructor) {
+    public void save(Instructor instructor) {
         instructorRepository.save(instructor);
     }
 
