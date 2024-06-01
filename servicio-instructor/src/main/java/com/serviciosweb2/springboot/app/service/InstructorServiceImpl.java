@@ -4,6 +4,7 @@ import java.util.Collection;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import com.serviciosweb2.springboot.app.model.Instructor;
 import com.serviciosweb2.springboot.app.repository.InstructorRepository;
@@ -15,28 +16,29 @@ public class InstructorServiceImpl implements InstructorService {
     private InstructorRepository instructorRepository;
 
     @Override
+    @Transactional(readOnly = false)
     public void insert(Instructor instructor) {
-        instructorRepository.insert(instructor);
+        instructorRepository.save(instructor);
     }
 
     @Override
     public void upddate(Instructor instructor) {
-        instructorRepository.upddate(instructor);
+        instructorRepository.save(instructor);
     }
 
     @Override
     public void delete(Integer instructorId) {
-        instructorRepository.delete(instructorId);
+        instructorRepository.deleteById(instructorId);
     }
 
     @Override
     public Instructor findById(Integer instructorId) {
-        return instructorRepository.findById(instructorId);
+        return instructorRepository.findById(instructorId).orElse(null);
     }
 
     @Override
     public Collection<Instructor> findAll() {
-        return instructorRepository.findAll();
+        return (Collection<Instructor>) instructorRepository.findAll();
     }
 
 }
