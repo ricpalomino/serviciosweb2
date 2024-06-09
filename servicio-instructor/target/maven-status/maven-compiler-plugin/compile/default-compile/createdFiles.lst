@@ -1,0 +1,6 @@
+com/serviciosweb2/springboot/app/ServicioInstructorApplication.class
+com/serviciosweb2/springboot/app/controller/InstructorController.class
+com/serviciosweb2/springboot/app/service/InstructorService.class
+com/serviciosweb2/springboot/app/service/InstructorServiceImpl.class
+com/serviciosweb2/springboot/app/repository/InstructorRepository.class
+com/serviciosweb2/springboot/app/model/Instructor.class

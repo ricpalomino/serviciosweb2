@@ -1,0 +1,6 @@
+/Users/richard.palomino/Documents/Idat/SERVICIOS WEB II/serviciosweb2/servicio-instructor/src/main/java/com/serviciosweb2/springboot/app/ServicioInstructorApplication.java
+/Users/richard.palomino/Documents/Idat/SERVICIOS WEB II/serviciosweb2/servicio-instructor/src/main/java/com/serviciosweb2/springboot/app/controller/InstructorController.java
+/Users/richard.palomino/Documents/Idat/SERVICIOS WEB II/serviciosweb2/servicio-instructor/src/main/java/com/serviciosweb2/springboot/app/model/Instructor.java
+/Users/richard.palomino/Documents/Idat/SERVICIOS WEB II/serviciosweb2/servicio-instructor/src/main/java/com/serviciosweb2/springboot/app/repository/InstructorRepository.java
+/Users/richard.palomino/Documents/Idat/SERVICIOS WEB II/serviciosweb2/servicio-instructor/src/main/java/com/serviciosweb2/springboot/app/service/InstructorService.java
+/Users/richard.palomino/Documents/Idat/SERVICIOS WEB II/serviciosweb2/servicio-instructor/src/main/java/com/serviciosweb2/springboot/app/service/InstructorServiceImpl.java
