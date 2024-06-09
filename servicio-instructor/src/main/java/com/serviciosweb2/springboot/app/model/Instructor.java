@@ -49,7 +49,6 @@ public class Instructor implements Serializable {
     private String lastname;
 
     @Column(name = "password", nullable = false)
-    @JsonIgnore
     private String password;
 
     @Column(unique=true,nullable=false)
